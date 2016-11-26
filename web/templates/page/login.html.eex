@@ -1,0 +1,4 @@
+<%= form_for @conn, page_path(@conn, :login), [as: :login_params], fn form -> %>
+  <%= text_input form, :username %>
+  <%= submit "Login", class: "waves-effect waves-blue light-blue btn-flat white-text submit-button" %>
+<% end %>

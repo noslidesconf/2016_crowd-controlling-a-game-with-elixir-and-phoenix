@@ -1,0 +1,6 @@
+<section id="create-a-story">
+  <%= form_for @conn, story_path(@conn, :create), [as: :story], fn form -> %>
+    <%= text_input(form, :title, placeholder: "Story title") %>
+    <%= submit("Create", class: "waves-effect waves-blue light-blue btn-flat white-text submit-button") %>
+  <% end %>
+</section>

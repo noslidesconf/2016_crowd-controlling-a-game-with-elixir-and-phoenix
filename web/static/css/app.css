@@ -1,0 +1,200 @@
+/* Generic elements */
+
+html {
+  color: #616161;
+  font-size: 18px;
+  min-height: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body.is-current-writer {
+  background-color: #fff8e1;
+}
+
+main {
+  width: 95% !important;
+}
+
+hr {
+  background-color: #e0e0e0;
+  border: 0;
+  box-shadow: none;
+  height: 1px;
+}
+
+.alert {
+  display: none;
+}
+
+.toast > .alert {
+  display: inline;
+}
+
+#logout-form, #logout-form button {
+  display: inline;
+}
+
+#logout-form button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.5rem;
+  padding: 0;
+  text-decoration: underline;
+}
+
+header#page-header {
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+}
+
+header#page-header h1 {
+  font-family: 'Bungee Inline', cursive;
+  font-size: 4rem;
+  margin: 0;
+  text-shadow: 2px 2px 0px #0277bd;
+}
+
+form {
+  margin: 0 auto;
+  min-width: 250px;
+  width: 50%;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 auto;
+  min-width: 100px;
+  width: 100%;
+}
+
+#user-info {
+  text-align: center;
+}
+
+#user-info #username {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Story.show */
+
+section#story {
+  border-radius: 2px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-top: 30px;
+  padding: 1% 5% 2% 5%;
+}
+
+section#story > header {
+  margin-bottom: 20px;
+}
+
+#story-title {
+  color: #ffc107;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 1px 2px 0px #ff8f00;
+  width: 80%;
+}
+
+#story-subtitle {
+  font-size: 0.75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#story-subtitle .story-by {
+  line-heigth: 100%;
+  margin: 0 auto;
+}
+
+#story-subtitle #author {
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+#share-story-container {
+  border-radius: 4px;
+  margin: 0px auto 10px;
+  padding: 5px 20px;
+  width: 70%;
+}
+
+#share-story-container p {
+  font-size: 0.8rem;
+  margin: 0;
+  text-align: center;
+}
+
+#story-info #users-in-story {
+  font-size: 0.75rem;
+}
+
+#story-info #users-in-story .current-user {
+  font-weight: bold;
+}
+
+#words li {
+  display: inline-block;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#words li span {
+  display: block;
+}
+
+#words li .word {
+  font-size: 1.5rem;
+}
+
+#words li .author {
+  color: #bdbdbd;
+  font-size: 0.5rem;
+}
+
+#current-writer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#current-writer .username {
+  font-weight: bold;
+}
+
+#countdown {
+  text-align: center;
+  font-size: 2rem;
+  width: 50%;
+  margin: 20px auto 0px auto;
+  background-color: #ffd54f;
+  border-radius: 4px;
+}
+
+#word-input {
+  font-size: 2rem;
+}
+
+/* Media queries */
+
+@media (max-width: 500px) {
+  header#page-header h1 {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 3rem;
+    margin: 0;
+    padding: 10px;
+    text-shadow: 2px 2px 0px #0277bd;
+  }
+
+  /* Story.show */
+  section#story {
+    box-shadow: none;
+  }
+}

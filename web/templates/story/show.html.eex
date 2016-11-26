@@ -1,0 +1,47 @@
+<script>window.currentStorySlug = '<%= @story.slug %>';</script>
+
+<section id="story">
+  <header>
+    <section id="share-story-container" class="blue-grey lighten-5">
+      <p id="share-story">
+        <% story_url = story_url(@conn, :show, @story.slug) %>
+        share at <a href="<%= story_url %>"><%= story_url %></a>
+      </p>
+    </section>
+
+    <h1 id="story-title">
+      <%= @story.title %>
+    </h1>
+
+    <section id="story-subtitle">
+      <p class="story-by">(a story started by <span id="author"><%= @story.creator %></span>)</p>
+    </section>
+  </header>
+
+  <hr/>
+
+  <section class="story-content row">
+    <section id="story-words-and-input" class="col s12 m8 l9">
+      <section id="current-writer">
+        <span class="is">the current writer is</span>
+        <span class="username"><!-- Will be filled dinamically --></span>
+      </section>
+
+      <div id="countdown">
+        <!-- Filled dynamically -->
+      </div>
+
+      <ul id="words">
+        <!-- Filled dynamically -->
+      </ul>
+
+      <input id="word-input" placeholder="Next word" disabled></input>
+    </section>
+
+    <section id="story-info" class="col s12 m4 l3">
+      <ul class="collection with-header" id="users-in-story">
+        <!-- Will be filled with presence data -->
+      </ul>
+    </section>
+  </section>
+</section>
